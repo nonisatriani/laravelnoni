@@ -14,12 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::prefix('admin')->group(function(){
-	Route::get('/', function(){
+Route::group(['middleware'=>['auth']], function(){
+	Route::prefix('admin')->group(function(){
+		Route::get('/', function(){
 		return view('admin.pages.dashbord');
 	})->name('admin.home');
 });
+});
+
+
 
 Auth::routes();
 
