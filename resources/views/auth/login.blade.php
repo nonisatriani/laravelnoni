@@ -17,7 +17,7 @@
                 @endif
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group"> 
               <div class="form-label-group">
                 <input type="password" id="inputPassword"
                  class="form-control {{$errors->has('password') ? 'is-invalid' : ''}}"

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+ 
     <title>TOKAP - @yield('title') </title>
     <link rel="icon" type="png/image" href="{{ url('favicon.png')}}">
     <!-- Bootstrap core CSS-->
